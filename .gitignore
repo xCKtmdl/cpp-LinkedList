@@ -1,0 +1,6 @@
+Debug/*
+ConsoleApplication1/Debug/*
+ipch/*
+*.exe
+*.dll
+*.opensdf
