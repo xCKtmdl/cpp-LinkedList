@@ -47,13 +47,39 @@ public:
 		if (tail == 0)
 			tail = head;
 
+// Example adding to list of 3 nodes
 //	 tail             old head     new head
 //	 node0   node2     node3       node4
 
 	}
+
+
+
+
+	void addToTail(int el) {
+
+		if (tail != 0) {
+		  // ^ check if list is empty
+
+	    // if not:
+			tail->next = new IntNode(el);
+			// ^what is currently the tail had next=0
+			// set next to a new IntNode with the datum specified,
+			// now tail is no longer the tail, the new datum created 
+			// has next=0, and should be the new tail.
+
+			tail = tail->next;
+			// ^the new tail we should set is the new datum node 
+			// created (the tail->next set above)
+		}
+		else
+	    // if its a empty list, head and tail are the node created
+		// with the specified datum
+			head = tail = new IntNode(el);
+	}
 	
 
-	void addToTail(int);
+//	void addToTail(int);
 	int deleteFromHead();
 	int deleteFromTail();
 	void deleteNode(int);

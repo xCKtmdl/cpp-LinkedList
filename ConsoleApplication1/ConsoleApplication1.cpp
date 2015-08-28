@@ -27,6 +27,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	new1->addToHead(4);
 	new1->addToHead(5);
 	new1->addToHead(6);
+	new1->addToTail(1000);
 
 	return 0;
 }
